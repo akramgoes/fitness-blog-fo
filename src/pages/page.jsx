@@ -1,26 +1,18 @@
 import React from 'react';
+import Header from '../components/Header';
+import Hero from '../components/hero';
+import Body from '../components/body';
+import Footer from '../components/footer';
 
-function Header() {
-  return (
-    <header style={{
-      backgroundColor: '#f000',
-      color: 'white',
-      fontFamily: 'sans-serif',
-      padding: '30px',
-      fontSize: '24px'
-    }}>
-      <h1>Fitness Logo - Welcome!</h1>
-    </header>
-  );
+const Page=()=>{
+    return (
+        <div className='flex-col'>
+        <Header/>
+        <Hero/>
+        <Body/>
+        <Footer/>
+
+        </div>
+    )
 }
-
-function Page() {
-  return (
-    <div>
-      <Header />
-      <h1>Contenu ta7t l-header</h1>
-    </div>
-  );
-}
-
 export default Page;
